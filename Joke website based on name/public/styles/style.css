@@ -1,0 +1,39 @@
+body {
+    background-color:	#E6E6FA;
+
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color:	#8A2BE2;
+}
+#labelWord {
+    color: #7B68EE;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-right: 20px;
+
+}
+#word {
+    font-size: 2rem;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+#submit {
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-right: 20px;
+    margin-top: 10px;
+    color:#4B0082;
+    background-color: 	#7B68EE;
+    border: 2px solid transparent; 
+}
+
+.joke-text{
+    font-size: 2rem;
+    margin-top: 30px;
+    color:#4B0082;
+    text-align: center;
+    
+}
