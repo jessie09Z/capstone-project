@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessie's Blog</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jessie's Personal Blog</h1>
+        <a id="newPostBtn" href="/add">New Post</a>
+       
+        <ul id="blogList">
+            <% locals.posts.forEach(post=> { %>
+                <li>
+                  <h2>
+                    <%=post.title%>
+                  </h2>
+                  
+                  <p>
+                    <%=post.content%>
+                  </p>
+                  <small>By: <%=post.author%> <br/>              
+                    <%= new Date(post.date).toISOString().slice(0, 19).replace('T', ' ')%> </small>
+                    <a class="edit" href="/edit/<%=post.id%>">Edit</a>
+                    <a class="delete" href="/delete/<%=post.id%>">Delete</a>
+                  
+                </li>
+                <% }); %>
+
+        </ul>
+    </div>
+
+    
+</body>
+
+</html>
